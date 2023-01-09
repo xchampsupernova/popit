@@ -1,0 +1,842 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0px;
+}
+
+/* Header/logo Title */
+header {
+    margin : 0px;
+    background-color: #ffbf69;
+    height: 400px;
+}
+
+.site-name {
+    font-size: 140px;
+    color: white;
+    margin-left: 200px;
+    margin-top: -300px;
+}
+
+.site-desc {
+    color: white;
+    margin-left: 210px;
+    margin-top: -100px;
+}
+
+.button-style {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+    margin-left: 210px;
+    font-style: italic;
+}
+
+.button-style:focus {
+    box-shadow: #3c4fe0 0 0 0 2px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+#logo {
+    width: 320px;
+    height:350px;
+    margin-left: 900px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    display: flex;
+    background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Main column */
+.main {
+    flex: 70%;
+    background-color: white;
+}
+
+
+.article-title{
+    text-align: center;
+    font-size: 30px;
+}
+
+.set-italic {
+    font-style: italic;
+}
+
+.p-article {
+    color: dimgray;
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.lightblue-div{
+    background-color: lightblue;
+    height: 350px;
+    padding-top: 1px;
+    margin-bottom: 60px;
+}
+
+.txt-align-center {
+    text-align: center;
+}
+
+.img-inline {
+    display: inline-flex;
+}
+
+.btn-inline {
+    display: inline-flex;
+}
+
+.product-size {
+    width: 150px;
+    height: 150px;
+    margin-left: 200px;
+    margin-right: 150px;
+    margin-top: 10px;
+}
+
+.product-names {
+    margin-left: 180px;
+    margin-right: 150px;
+    display: inline-flex;
+}
+
+.img-reduce{
+    width: 300px;
+    height: 300px;
+}
+
+.img-right {
+    margin-right: 200px;
+    padding-bottom: 100px;
+}
+
+.product-btn {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn-spaces{
+    margin-left: 209px;
+    margin-right: 180px;
+}
+
+.add-marginleft {
+    margin-left: 40px;
+}
+
+.add-marginright{
+    margin-right: 600px;
+}
+
+.add-margintop{
+    margin-top: 100px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #333333;
+    color: white;
+}
+
+.go-behind {
+    background-image:url("./background-image/bg-grid.png");
+    background-repeat: no-repeat;
+    height: 502px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (min-width: 1304px) and (max-width: 1519px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+
+    header {
+        height: 350px;
+    }
+
+    .site-name {
+        font-size: 100px;
+        margin-left: 200px;
+        margin-top: -200px;
+    }
+
+    .site-desc {
+        color: white;
+        margin-left: 210px;
+        margin-top: -70px;
+    }
+
+    .button-style {
+        height: 20px;
+        line-height: 1;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 10px;
+        margin-left: 210px;
+    }
+
+    #logo {
+        width: 180px;
+        height: 200px;
+        margin-left: 900px;
+        margin-bottom: 20px;
+        margin-top: 100px;
+    }
+
+    .product-size {
+        width: 80px;
+        height: 80px;
+    }
+
+    .product-names {
+        margin-left: 188px;
+        margin-right: 120px;
+        font-size: 10px;
+    }
+
+    .product-btn{
+        padding: 7px 10px 7px;
+        font-size: 8px;
+    }
+
+    .lightblue-div{
+        background-color: lightblue;
+        height: 250px;
+    }
+
+    .btn-spaces{
+        margin-left: 205px;
+        margin-right: 160px;
+    }
+
+}
+
+@media screen and (min-width: 1118px) and (max-width: 1303px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    .site-name {
+        font-size: 60px;
+        margin-left: 250px;
+        margin-top: -150px;
+    }
+
+    .site-desc {
+        font-size: 12px;
+        margin-left: 250px;
+        margin-top: -50px;
+    }
+
+    .button-style {
+        height: 20px;
+        line-height: 1;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 10px;
+        margin-left: 250px;
+    }
+
+    #logo {
+        width: 100px;
+        height: 120px;
+        margin-left: 700px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+
+    .product-size {
+        width: 80px;
+        height: 80px;
+        margin-left: 82px;
+    }
+
+    .product-names {
+        margin-left: 80px;
+        margin-right: 100px;
+        font-size: 10px;
+    }
+
+    .product-btn{
+        padding: 7px 10px 7px;
+        font-size: 8px;
+    }
+
+    .lightblue-div{
+        background-color: lightblue;
+        height: 250px;
+    }
+
+    .btn-spaces{
+        margin-left: 100px;
+        margin-right: 140px;
+    }
+
+    .p-article {
+        font-size: 12px;
+    }
+
+    .article-title{
+        font-size: 18px;
+    }
+
+    footer {
+        padding: 10px;
+        margin-top: 100px;
+        font-size: 10px;
+    }
+
+    .go-behind {
+        background-image:url("./background-image/bg-grid_2.png");
+        background-repeat: no-repeat;
+        height: 300px;
+    }
+
+    .img-reduce{
+        width: 200px;
+        height: 220px;
+    }
+
+    #kid{
+        margin-bottom: 200px;
+    }
+
+    .img-right {
+        margin-right: 500px;
+        margin-top: -20px;
+    }
+
+    .colorful-p{
+        margin-top: 40px;
+    }
+
+
+}
+
+@media screen and (min-width: 946px) and (max-width: 1117px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    .site-name {
+        font-size: 60px;
+        margin-left: 250px;
+        margin-top: -150px;
+    }
+
+    .site-desc {
+        font-size: 12px;
+        margin-left: 250px;
+        margin-top: -50px;
+    }
+
+    .button-style {
+        height: 20px;
+        line-height: 1;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 10px;
+        margin-left: 250px;
+    }
+
+    #logo {
+        width: 100px;
+        height: 120px;
+        margin-left: 700px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+
+    .product-size {
+        width: 80px;
+        height: 80px;
+        margin-left: 82px;
+    }
+
+    .product-names {
+        margin-left: 80px;
+        margin-right: 100px;
+        font-size: 10px;
+    }
+
+    .product-btn{
+        padding: 7px 10px 7px;
+        font-size: 8px;
+    }
+
+    .lightblue-div{
+        background-color: lightblue;
+        height: 250px;
+    }
+
+    .btn-spaces{
+        margin-left: 100px;
+        margin-right: 140px;
+    }
+
+    .p-article {
+        font-size: 12px;
+    }
+
+    .article-title{
+        font-size: 18px;
+    }
+
+    footer {
+        padding: 10px;
+        margin-top: 100px;
+        font-size: 10px;
+    }
+
+    .go-behind {
+        background-image:url("./background-image/bg-grid_2.png");
+        background-repeat: no-repeat;
+        height: 300px;
+    }
+
+    .img-reduce{
+        width: 200px;
+        height: 220px;
+    }
+
+    #kid{
+        margin-bottom: 200px;
+    }
+
+    .img-right {
+        margin-right: 300px;
+        margin-top: -50px;
+    }
+
+    .colorful-p{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 714px) and (max-width: 945px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    .site-name {
+        font-size: 60px;
+        margin-left: 150px;
+        margin-top: -150px;
+    }
+
+    .site-desc {
+        font-size: 12px;
+        margin-left: 150px;
+        margin-top: -50px;
+    }
+
+    .button-style {
+        height: 20px;
+        line-height: 1;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 10px;
+        margin-left: 150px;
+    }
+
+    #logo {
+        width: 100px;
+        height: 120px;
+        margin-left: 500px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+
+    .product-size {
+        width: 50px;
+        height: 50px;
+        margin-left: 35px;
+    }
+
+    .product-names {
+        margin-left: 25px;
+        margin-right: 120px;
+        font-size: 7px;
+    }
+
+    .product-btn{
+        padding: 4px 7px 4px;
+        font-size: 6px;
+    }
+
+    .lightblue-div{
+        background-color: lightblue;
+        height: 250px;
+    }
+
+    .btn-spaces{
+        margin-left: 50px;
+        margin-right: 120px;
+    }
+
+    .p-article {
+        font-size: 10px;
+    }
+
+    .article-title{
+        font-size: 18px;
+    }
+
+    footer {
+        padding: 10px;
+        margin-top: 50px;
+        font-size: 10px;
+    }
+
+    .go-behind {
+        background-image:url("./background-image/bg-grid_2.png");
+        background-repeat: no-repeat;
+        height: 300px;
+    }
+
+    .img-reduce{
+        width: 150px;
+        height: 180px;
+    }
+
+    #kid{
+        margin-bottom: 200px;
+    }
+
+    .img-right {
+        margin-right: 100px;
+        margin-top: 20px;
+    }
+
+    .colorful-p{
+        margin-top: 30px;
+    }
+
+    .add-marginleft {
+        margin-left: 30px;
+    }
+
+    .add-marginright{
+        margin-right: 180px;
+    }
+
+
+}
+
+@media screen and (min-width: 504px) and (max-width: 713px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    .site-name {
+        font-size: 40px;
+        margin-left: 70px;
+        margin-top: -130px;
+    }
+
+    .site-desc {
+        font-size: 8px;
+        margin-left: 70px;
+        margin-top: -30px;
+    }
+
+    .button-style {
+        height: 20px;
+        line-height: 1;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 10px;
+        margin-left: 70px;
+    }
+
+    #logo {
+        width: 100px;
+        height: 120px;
+        margin-left: 300px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .product-size {
+        width: 50px;
+        height: 50px;
+        margin-left: 15px;
+        margin-right: 100px;
+    }
+
+    .product-names {
+        margin-left: 10px;
+        margin-right: 65px;
+        font-size: 7px;
+    }
+
+    .product-btn{
+        padding: 4px 7px 4px;
+        font-size: 6px;
+    }
+
+    .lightblue-div{
+        background-color: lightblue;
+        height: 250px;
+    }
+
+    .btn-spaces{
+        margin-left: 20px;
+        margin-right: 90px;
+    }
+
+    .p-article {
+        font-size: 8px;
+    }
+
+    .article-title{
+        font-size: 15px;
+    }
+
+    footer {
+        padding: 10px;
+        margin-top: 50px;
+        font-size: 10px;
+    }
+
+    .go-behind {
+        background-image:url("./background-image/bg-grid_3.png");
+        background-repeat: no-repeat;
+        height: 200px;
+    }
+
+    .img-reduce{
+        width: 100px;
+        height: 180px;
+    }
+
+    #kid{
+        margin-bottom: 200px;
+    }
+
+    .img-right {
+        margin-right: 70px;
+        margin-top: -100px;
+    }
+
+    .colorful-p{
+        margin-top: 30px;
+    }
+
+    .add-marginleft {
+        margin-left: 30px;
+    }
+
+    .add-marginright{
+        margin-right: 180px;
+    }
+
+}
+
+@media screen and (min-width: 324px) and (max-width: 503px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    .site-name {
+        font-size: 30px;
+        margin-left: 50px;
+        margin-top: -130px;
+    }
+
+    .site-desc {
+        font-size: 8px;
+        margin-left: 50px;
+        margin-top: -20px;
+    }
+
+    .button-style {
+        height: 20px;
+        line-height: 1;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 10px;
+        margin-left: 50px;
+    }
+
+    #logo {
+        width: 100px;
+        height: 120px;
+        margin-left: 200px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .product-size {
+        width: 50px;
+        height: 50px;
+        margin-left: 5px;
+        margin-right: 50px;
+    }
+
+    .product-names {
+        margin-left: 5px;
+        margin-right: 30px;
+        font-size: 6px;
+    }
+
+    .product-btn{
+        padding: 4px 7px 4px;
+        font-size: 6px;
+    }
+
+    .lightblue-div{
+        background-color: lightblue;
+        height: 150px;
+    }
+
+    .btn-spaces{
+        margin-left: 10px;
+        margin-right: 40px;
+    }
+
+    .p-article {
+        font-size: 8px;
+    }
+
+    .article-title{
+        font-size: 15px;
+    }
+
+    footer {
+        padding: 10px;
+        margin-top: 110px;
+        font-size: 3px;
+    }
+
+    .go-behind {
+        background-image:url("./background-image/bg-grid_4.png");
+        background-repeat: no-repeat;
+        height: 150px;
+    }
+
+    .img-reduce{
+        width: 60px;
+        height: 150px;
+    }
+
+    #kid{
+        margin-bottom: 200px;
+    }
+
+    .img-right {
+        margin-right: 20px;
+        margin-top: -10px;
+    }
+
+    .colorful-p{
+        margin-top: 20px;
+    }
+
+    .add-marginleft {
+        margin-left: 30px;
+    }
+
+    .add-marginright{
+        margin-right: 60px;
+    }
+
+    h3{
+        font-size: 9px;
+    }
+
+    footer h3 {
+        font-size: 6px;
+    }
+
+
+}
